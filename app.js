@@ -6,7 +6,6 @@ const app = express();
 // Use CORS middleware
 app.use(cors());
 
-// Serve static files from the same directory as index.js
 app.use(express.static(__dirname)); 
 
 app.use(bodyParser.json());
@@ -61,4 +60,5 @@ const server = app.listen(PORT, () => {
     console.log(`Navigate to http://localhost:${PORT}/ in your browser.`);
 });
 
-module.exports = server;
+// Export app and items array for testing
+module.exports = { app, items };
