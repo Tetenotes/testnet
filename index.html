@@ -29,16 +29,49 @@
                 <button type="submit">List Item</button>
             </form>
         </section>
-        <section id="itemListing">
+        <section id="availableItems">
             <h2>Available Items</h2>
             <div id="itemsList">
-                
+                <div class="product">
+                    <p>Title: iPhone 13 Pro</p>
+                    <p>Description: A powerful smartphone with advanced features.</p>
+                    <p>Price: 1.5 ETH</p>
+                    <button onclick="buyItem('iPhone 13 Pro', 1.5)">Buy</button>
+                    <button onclick="sellItem('iPhone 13 Pro', 1.5)">Sell</button>
+                </div>
+                <div class="product">
+                    <p>Title: Samsung Galaxy S22 Ultra</p>
+                    <p>Description: The latest flagship phone with a stunning display.</p>
+                    <p>Price: 1.8 ETH</p>
+                    <button onclick="buyItem('Samsung Galaxy S22 Ultra', 1.8)">Buy</button>
+                    <button onclick="sellItem('Samsung Galaxy S22 Ultra', 1.8)">Sell</button>
+                </div>
+                <div class="product">
+                    <p>Title: MacBook Air M2</p>
+                    <p>Description: A sleek and lightweight laptop with powerful performance.</p>
+                    <p>Price: 2.2 ETH</p>
+                    <button onclick="buyItem('MacBook Air M2', 2.2)">Buy</button>
+                    <button onclick="sellItem('MacBook Air M2', 2.2)">Sell</button>
+                </div>
+                <div class="product">
+                    <p>Title: Nintendo Switch OLED</p>
+                    <p>Description: A gaming console with a vibrant OLED display.</p>
+                    <p>Price: 1.0 ETH</p>
+                    <button onclick="buyItem('Nintendo Switch OLED', 1.0)">Buy</button>
+                    <button onclick="sellItem('Nintendo Switch OLED', 1.0)">Sell</button>
+                </div>
+                <div class="product">
+                    <p>Title: Apple Watch Series 7</p>
+                    <p>Description: Stay connected and track your fitness with this smartwatch.</p>
+                    <p>Price: 0.8 ETH</p>
+                    <button onclick="buyItem('Apple Watch Series 7', 0.8)">Buy</button>
+                    <button onclick="sellItem('Apple Watch Series 7', 0.8)">Sell</button>
+                </div>
             </div>
         </section>
         <section id="transactions">
             <h2>Transactions</h2>
             <ul id="transactionsList">
-                
                 <li>Buy: iPhone 13 Pro Max</li>
                 <li>Sell: MacBook Pro 16-inch M1 Pro</li>
             </ul>
