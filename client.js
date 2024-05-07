@@ -82,16 +82,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // fetch and render items
-    async function fetchAndRenderItems() {
-        try {
-            const response = await fetch('/products');
-            const items = await response.json();
-            renderItems(items);
-        } catch (error) {
-            console.error('Error fetching items:', error);
-        }
-    }
+   
 
     // render items
     function renderItems(items) {
